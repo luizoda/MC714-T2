@@ -1,0 +1,33 @@
+services:
+  s1:
+    build: .
+    environment:
+      - ID=1
+      - PORT=50051
+    network_mode: "host"
+    ports:
+      - "50051:50051"
+  s2:
+    build: .
+    environment:
+      - ID=2
+      - PORT=50052
+    network_mode: "host"
+    ports:
+      - "50052:50052"
+  s3:
+    build: .
+    environment:
+      - ID=3
+      - PORT=50053
+    network_mode: "host"
+    ports:
+      - "50053:50053"
+  s4:
+    build: .
+    environment:
+      - ID=4
+      - PORT=50054
+    network_mode: "host"
+    ports:
+      - "50054:50054"

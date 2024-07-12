@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package token_ring;
+
+service TokenRing {
+  rpc PassToken (TokenRequest) returns (TokenResponse) {}
+}
+
+message TokenRequest {
+}
+
+message TokenResponse {
+}

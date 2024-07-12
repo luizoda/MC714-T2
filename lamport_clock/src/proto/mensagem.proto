@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package lamport_clock;
+
+service Clock {
+  rpc Time (TimeRequest) returns (TimeResponse) {}
+}
+
+message TimeRequest {
+  int32 timestamp = 1;
+}
+
+message TimeResponse {
+}

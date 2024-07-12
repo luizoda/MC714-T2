@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package bully;
+
+service Bully {
+  rpc Election (IdRequest) returns (IdResponse) {}
+  rpc Alive (IdRequest) returns (IdResponse) {}
+  rpc Victory (IdRequest) returns (IdResponse) {}
+  rpc Ok (IdRequest) returns (IdResponse) {}
+}
+
+message IdRequest {
+  int32 id = 1;
+}
+
+message IdResponse {
+}
